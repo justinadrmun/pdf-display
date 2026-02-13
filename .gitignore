@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.egg-info/
+.venv/
+.env/
+
+# Streamlit
+.streamlit/
+
+# Benchmark logs
+benchmark_*.json
+benchmark_*.csv
+
+# Ignore all Python files in docs folder
+docs/*.py
