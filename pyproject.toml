@@ -1,23 +1,17 @@
-[project]
+[tool.poetry]
 name = "pdf-display"
 version = "0.1.0"
-description = "PDF display strategies for Streamlit chatbot apps"
-requires-python = ">=3.9,!=3.9.7"
-authors = [
-    {name = "Your Name", email = "your@email.com"}
-]
+description = "PDF display strategies for benchamrking"
+authors = ["Your Name <your@email.com>"]
+package-mode = false
 
-# Uv is a fast Python package installer and resolver
-
-dependencies = [
-	"streamlit==1.49.0",
-	"pymupdf>=1.24.0",
-	"streamlit-pdf==1.0.8",
-	"streamlit-pdf-viewer>=0.0.27",
-	# Optional: Azure Blob Storage SAS URL generation
-	# "azure-storage-blob>=12.0.0",
-]
+[tool.poetry.dependencies]
+python = ">=3.9,!=3.9.7"
+streamlit = "1.49.0"
+pymupdf = ">=1.24.0"
+streamlit-pdf = "1.0.8"
+streamlit-pdf-viewer = ">=0.0.27"
 
 [build-system]
-requires = ["uv"]
-build-backend = "uv.build"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
