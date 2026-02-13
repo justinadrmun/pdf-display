@@ -2,7 +2,9 @@
 name = "pdf-display"
 version = "0.1.0"
 description = "PDF display strategies for Streamlit chatbot apps"
-authors = ["Your Name <your@email.com>"]
+authors = [
+    {name = "Your Name", email = "your@email.com"}
+]
 
 # Uv is a fast Python package installer and resolver
 
