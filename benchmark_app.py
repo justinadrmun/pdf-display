@@ -101,7 +101,7 @@ with col1:
     st.caption("PyMuPDF renders pages server-side → st.image()")
 
     try:
-        from docs.pdf_display_strategies_docs import display_pdf_page_range_as_images
+        from pdf_display_strategies import display_pdf_page_range_as_images
 
         t0 = time.perf_counter()
         display_pdf_page_range_as_images(pdf_bytes, start_page=start_page, end_page=end_page, dpi=dpi)
@@ -128,7 +128,7 @@ with col2:
     st.caption("PyMuPDF page extraction → native st.pdf()")
 
     try:
-        from docs.pdf_display_strategies_docs import display_pdf_pages_native
+        from pdf_display_strategies import display_pdf_pages_native
 
         t0 = time.perf_counter()
         display_pdf_pages_native(pdf_bytes, start_page=start_page, end_page=end_page, height=500)
@@ -192,7 +192,7 @@ with col4:
     st.caption("PyMuPDF extracts pages BEFORE sending to frontend")
 
     try:
-        from docs.pdf_display_strategies_docs import _extract_pages_pymupdf
+        from pdf_display_strategies import _extract_pages_pymupdf
         from streamlit_pdf_viewer import pdf_viewer
 
         t0 = time.perf_counter()
@@ -243,7 +243,7 @@ st.subheader("Strategy 5: Hybrid — Instant Preview + Expandable")
 st.caption("Image loads instantly for each page, click to open interactive viewer")
 
 try:
-    from docs.pdf_display_strategies_docs import display_pdf_hybrid
+    from pdf_display_strategies import display_pdf_hybrid
 
     t0 = time.perf_counter()
     for pg in page_range:
