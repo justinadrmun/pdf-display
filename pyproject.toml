@@ -2,6 +2,7 @@
 name = "pdf-display"
 version = "0.1.0"
 description = "PDF display strategies for Streamlit chatbot apps"
+requires-python = ">=3.9,!=3.9.7"
 authors = [
     {name = "Your Name", email = "your@email.com"}
 ]
